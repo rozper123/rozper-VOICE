@@ -1,0 +1,55 @@
+{
+  "name": "rozper/voice-connectivity",
+  "description": "Rozper provides reliable voice connectivity, SIP trunking, and call routing solutions for businesses worldwide.",
+  "keywords": [
+    "Rozper",
+    "VoIP",
+    "SIP Trunking",
+    "Voice Termination",
+    "Telecom",
+    "PBX Integration",
+    "CLI Routing",
+    "Call Center",
+    "Contact Center",
+    "Voice Connectivity"
+  ],
+  "homepage": "https://www.rozper.com",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Rozper PTE LTD",
+      "email": "support@rozper.com",
+      "homepage": "https://www.rozper.com",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "email": "support@rozper.com",
+    "issues": "https://www.rozper.com/contact",
+    "docs": "https://www.rozper.com/docs"
+  },
+  "require": {
+    "php": ">=8.1",
+    "guzzlehttp/guzzle": "^7.9",
+    "monolog/monolog": "^3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Rozper\\": "src/"
+    }
+  },
+  "scripts": {
+    "start": "php -S localhost:8000 -t public",
+    "test": "phpunit"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-main": "1.0-dev"
+    },
+    "project-info": {
+      "reliability": "99.99%",
+      "coverage": "150+ countries",
+      "clients": "12K+ business clients"
+    }
+  }
+}
