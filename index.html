@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rozper — Unified Communications & Wholesale Voice</title>
+  <style>
+    :root{--accent:#0066ff;--muted:#65748b;--bg:#f6f8fb;--card:#ffffff}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:#0f1724;background:var(--bg);-webkit-font-smoothing:antialiased}
+    .container{max-width:1200px;margin:0 auto;padding:28px}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{width:48px;height:48px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#00bbff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    nav a{margin-left:18px;color:var(--muted);text-decoration:none;font-weight:600}
+    .cta{background:var(--accent);color:#fff;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:700}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:12px}
+    .eyebrow{color:var(--accent);font-weight:700}
+    h1{font-size:34px;margin:8px 0 12px;line-height:1.05}
+    p.lead{color:var(--muted);font-size:16px;margin:0 0 18px}
+    .features-grid{display:flex;gap:12px;flex-wrap:wrap}
+    .pill{background:#eef6ff;color:var(--accent);padding:8px 12px;border-radius:999px;font-weight:700}
+    .hero-card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,36,0.06)}
+    .stats{display:flex;gap:12px;margin-top:12px}
+    .stat{flex:1;text-align:center}
+    .stat h3{margin:6px 0;font-size:20px}
+    .stat p{margin:0;color:var(--muted)}
+
+    /* Logos */
+    .logos{background:linear-gradient(180deg,transparent,rgba(15,23,36,0.02));padding:18px;border-radius:12px;margin-top:20px}
+    .logo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:12px;align-items:center}
+    .partner{background:#fff;padding:8px;border-radius:8px;display:flex;align-items:center;justify-content:center;height:56px;box-shadow:0 2px 8px rgba(0,0,0,0.03);font-weight:700;color:var(--muted)}
+
+    /* Sections */
+    section{margin-top:28px}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,36,0.04)}
+    .card h4{margin:0 0 8px}
+    .card p{margin:0;color:var(--muted)}
+
+    /* Features list */
+    .feature-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+    .feature{display:flex;gap:12px;align-items:flex-start}
+    .feature .dot{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,#f0f9ff,#e7f3ff);display:flex;align-items:center;justify-content:center;font-weight:700}
+
+    /* Testimonials */
+    .testimonials{display:grid;grid-template-columns:1fr;gap:12px}
+    .testimonial{background:linear-gradient(180deg,#fff,#fbfdff);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,36,0.04)}
+    .t-meta{display:flex;gap:12px;align-items:center}
+    .avatar{width:56px;height:56px;border-radius:999px;background:linear-gradient(135deg,#ffd6a5,#ffb4a2);display:flex;align-items:center;justify-content:center;font-weight:700}
+
+    /* FAQ */
+    .faq{max-width:900px}
+    .faq-item{background:var(--card);padding:14px;border-radius:10px;margin-bottom:8px}
+    .question{display:flex;justify-content:space-between;cursor:pointer}
+    .answer{color:var(--muted);margin-top:8px;display:none}
+
+    footer{margin-top:40px;padding:22px 0;text-align:center;color:var(--muted)}
+
+    /* Responsive */
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">RZ</div>
+        <div>
+          <div style="font-weight:800">Rozper</div>
+          <div style="font-size:12px;color:var(--muted)">Unified Communications & Wholesale Voice</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#products">Products</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact" class="cta">Get a Demo</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <div class="eyebrow">100K+ members and counting</div>
+          <h1>The Powerful, AI‑Powered Platform That Unifies All Your Communications</h1>
+          <p class="lead">Welcome to Rozper. We build world-class UCaaS, wholesale voice, and global number solutions on a network you can trust, supported by a team that feels like your own.</p>
+
+          <div class="features-grid">
+            <div class="pill">UCaaS</div>
+            <div class="pill">Wholesale Voice</div>
+            <div class="pill">Global Numbers</div>
+            <div class="pill">APIs</div>
+          </div>
+
+          <div style="margin-top:18px;display:flex;gap:12px">
+            <a class="cta" href="#contact">Talk to Sales</a>
+            <a href="#faq" style="align-self:center;color:var(--muted);font-weight:700">View FAQs →</a>
+          </div>
+
+          <div class="logos" style="margin-top:20px">
+            <div style="font-weight:700;margin-bottom:8px;color:var(--muted)">Trusted Partner</div>
+            <div class="logo-grid" id="partnerGrid">
+              <!-- partner logos inserted by JS -->
+            </div>
+          </div>
+
+        </div>
+
+        <aside class="hero-card">
+          <h3 style="margin:0 0 8px">You Deserve More Than a Provider. You Deserve a Partner.</h3>
+          <p style="margin:0 0 12px;color:var(--muted)">Let's be honest—telecom services can feel impersonal and complex. We started Rozper to change that. Powerful technology with genuine human support.</p>
+
+          <div class="stats">
+            <div class="stat"><h3>99.999%</h3><p>Uptime</p></div>
+            <div class="stat"><h3>150+</h3><p>Countries</p></div>
+            <div class="stat"><h3>24/7</h3><p>Support</p></div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="products">
+        <h2>Bring Your Teams Together with UCaaS</h2>
+        <p style="color:var(--muted);max-width:820px">Unite your organization with voice, video, and messaging in one secure hub. Instant presence in over 150 countries, carrier-grade wholesale voice, and advanced features without the complexity.</p>
+
+        <div class="cards" style="margin-top:16px">
+          <div class="card">
+            <h4>Advanced IVR</h4>
+            <p>Create smart call flows to route callers to the right agent.</p>
+          </div>
+          <div class="card">
+            <h4>Call Analytics</h4>
+            <p>Powerful, easy-to-use reports to monitor performance and revenue.</p>
+          </div>
+          <div class="card">
+            <h4>Geo Redundancy</h4>
+            <p>Automatic failover ensures uptime and call quality.</p>
+          </div>
+          <div class="card">
+            <h4>Developer APIs</h4>
+            <p>Secure, flexible APIs to customize workflows and integrations.</p>
+          </div>
+          <div class="card">
+            <h4>Call Recording</h4>
+            <p>Store calls securely for compliance and training.</p>
+          </div>
+          <div class="card">
+            <h4>CRM Integration</h4>
+            <p>Seamlessly sync call data with your existing business tools.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="solutions">
+        <h2>Built for You — Designed for Your Unique Business Needs</h2>
+        <div class="feature-list" style="margin-top:12px">
+          <div class="feature"><div class="dot">1</div><div><h4>Scalable Solutions</h4><p class="muted">Leverage our infrastructure to expand voice services.</p></div></div>
+          <div class="feature"><div class="dot">2</div><div><h4>Global Outreach</h4><p class="muted">Local numbers in target territories to close deals faster.</p></div></div>
+          <div class="feature"><div class="dot">3</div><div><h4>Advanced Support</h4><p class="muted">24/7 expert support for enterprise operations.</p></div></div>
+          <div class="feature"><div class="dot">4</div><div><h4>Seamless Connectivity</h4><p class="muted">Secure, cloud-based tools for remote teams.</p></div></div>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <h2>Testimonials — Loved by Teams, Trusted by Reviewers</h2>
+        <div class="testimonials" style="margin-top:12px" id="testiWrap">
+          <!-- testimonials added by JS -->
+        </div>
+      </section>
+
+      <section id="faq">
+        <h2>FAQs</h2>
+        <div class="faq">
+          <div class="faq-item">
+            <div class="question"> <strong>What truly makes Rozper different?</strong> <span>+</span></div>
+            <div class="answer">It's our commitment to partnership — feature-rich network plus a team that's genuinely invested in your success and available 24/7.</div>
+          </div>
+          <div class="faq-item">
+            <div class="question"> <strong>Is your network secure for business-critical communications?</strong> <span>+</span></div>
+            <div class="answer">Yes — enterprise-grade encryption and compliance options are available for sensitive use cases.</div>
+          </div>
+          <div class="faq-item">
+            <div class="question"> <strong>How complicated is it to switch our services to Rozper?</strong> <span>+</span></div>
+            <div class="answer">We handle migration with a structured onboarding process and dedicated engineers to minimize downtime.</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Ready to see what a true communications partner feels like?</h2>
+        <p style="color:var(--muted)">Let's have a no-pressure conversation about your goals. Our experts will help design a solution that moves your business forward.</p>
+
+        <div style="display:flex;gap:12px;margin-top:12px;flex-wrap:wrap">
+          <input id="email" placeholder="Your work email" style="padding:12px;border-radius:8px;border:1px solid #e6eefc;flex:1;min-width:220px" />
+          <button id="demoBtn" class="cta">Request a Demo</button>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div style="max-width:980px;margin:0 auto">© 2025 Rozper. All Rights Reserved • Voice • Wholesale VoIP • UCaaS • Contact Center</div>
+    </footer>
+  </div>
+
+  <script>
+    // Populate partner logos grid
+    const partnerGrid = document.getElementById('partnerGrid');
+    const partnerNames = [
+      'Partner Logo 1','Partner Logo 1','Partner Logo 1','Partner Logo 2','Partner Logo 3','Partner Logo 4','Partner Logo 5','Partner Logo 6','Partner Logo 1','Partner Logo 1','Partner Logo 1','Partner Logo 2','Partner Logo 3','Partner Logo 4','Partner Logo 6','Partner Logo 6'
+    ];
+    partnerNames.forEach(name=>{
+      const div = document.createElement('div');
+      div.className = 'partner';
+      div.textContent = name;
+      partnerGrid.appendChild(div);
+    });
+
+    // Testimonials data
+    const testiWrap = document.getElementById('testiWrap');
+    const testimonials = [
+      {name:'Gunnar Björnsson', title:'Director of Network Operations, Apex Communications', text:"In the carrier business, reliability is everything. Rozper's wholesale voice network gives us exceptional call quality and the peace of mind we need to serve our own customers flawlessly."},
+      {name:'Sofia Rossi', title:'Founder, The Artisan Weavers Collective', text:"Expanding globally seemed impossible until we found Rozper. Their virtual numbers gave us an instant local presence in new markets, leading directly to a 40% increase in our international sales."},
+      {name:'Liam O\'Connell', title:'IT Manager, Momentum Logistics', text:"What sets Rozper apart is their support. They feel like a true partner who is invested in our success, not just another provider."},
+      {name:'Elena Petrova', title:'Head of Operations, The Innovatech Solutions', text:"Rozper’s UCaaS platform was the key to our successful shift to hybrid work. It gave us a single, seamless workspace online that actually increased our team's productivity."}
+    ];
+
+    testimonials.forEach(t=>{
+      const el = document.createElement('div'); el.className='testimonial';
+      el.innerHTML = `
+        <div class="t-meta">
+          <div class="avatar">${t.name.split(' ').map(n=>n[0]).slice(0,2).join('')}</div>
+          <div>
+            <strong>${t.name}</strong>
+            <div style="color:var(--muted);font-size:13px">${t.title}</div>
+          </div>
+        </div>
+        <p style="margin-top:12px;color:var(--muted)">${t.text}</p>
+      `;
+      testiWrap.appendChild(el);
+    });
+
+    // Simple FAQ accordion
+    document.querySelectorAll('.faq-item').forEach(item=>{
+      const q = item.querySelector('.question');
+      q.addEventListener('click', ()=>{
+        const ans = item.querySelector('.answer');
+        const open = ans.style.display === 'block';
+        document.querySelectorAll('.answer').forEach(a=>a.style.display='none');
+        document.querySelectorAll('.faq-item .question span').forEach(s=>s.textContent='+');
+        if(!open){ ans.style.display='block'; q.querySelector('span').textContent='-'; }
+      });
+    });
+
+    // Demo button behaviour
+    document.getElementById('demoBtn').addEventListener('click', ()=>{
+      const email = document.getElementById('email').value.trim();
+      if(!email.includes('@')){ alert('Please enter a valid work email.'); return; }
+      alert('Thanks — we\'ll contact ' + email + ' to schedule your demo.');
+      document.getElementById('email').value='';
+    });
+
+    // Accessibility: keyboard support for FAQ
+    document.querySelectorAll('.question').forEach(q=>{ q.setAttribute('tabindex',0); q.addEventListener('keyup', e=>{ if(e.key==='Enter') q.click(); }) });
+  </script>
+</body>
+</html>
